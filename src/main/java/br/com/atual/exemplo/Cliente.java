@@ -3,26 +3,15 @@ package br.com.atual.exemplo;
 /**
  * Created by Ton on 04/03/2015.
  */
-public class Cliente extends  Entidade implements IBean {
+public class Cliente extends Entidade implements IBean {
 
-    private String cpf;
+    private Integer numeroCliente;
 
-    private String rg;
-
-    @Override
-    public String getCpf() {
-        return this.cpf;
+    public Integer getNumeroCliente() {
+        return numeroCliente;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getRg() {
-        return rg;
-    }
-
-    public void setRg(String rg) {
-        this.rg = rg;
+    public void setNumeroCliente(Integer numeroCliente) {
+        this.numeroCliente = numeroCliente;
     }
 }

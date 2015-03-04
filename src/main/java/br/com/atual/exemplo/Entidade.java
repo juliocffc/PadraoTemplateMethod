@@ -3,7 +3,7 @@ package br.com.atual.exemplo;
 /**
  * Created by Ton on 04/03/2015.
  */
-public abstract class Entidade implements  IBean {
+public abstract class Entidade {
 
     private Integer id;
 

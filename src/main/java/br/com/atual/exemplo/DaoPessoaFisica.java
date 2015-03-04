@@ -7,10 +7,15 @@ public class DaoPessoaFisica extends Dao {
 
     @Override
     protected Boolean valida(IBean entidade) {
+
         System.out.println(" executou em pessoa fisica");
-        if(entidade.getId() != null  && entidade.getCpf() !=null){
-                return true;
+
+        PessoaFisica pf = (PessoaFisica) entidade;
+
+        if (pf.getId() != null && pf.getCpf() != null) {
+            return true;
         }
+
         return false;
     }
 }

@@ -6,7 +6,7 @@ package br.com.atual.exemplo;
 public class Inicio {
 
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         System.out.println("Teste salvando");
 
         DaoPessoaFisica dao = new DaoPessoaFisica();
@@ -15,6 +15,17 @@ public class Inicio {
         pf.setNome("Ana");
         pf.setCpf("04251217985");
         dao.salvar(pf);
+
+
+        DaoCliente daoCliente = new DaoCliente();
+        Cliente cliente = new Cliente();
+        cliente.setId(0);
+        cliente.setNome("Cliente legal");
+        cliente.setNumeroCliente(123);
+
+        daoCliente.salvar(cliente);
+
+
     }
 
 }

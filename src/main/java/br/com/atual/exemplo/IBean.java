@@ -5,5 +5,4 @@ package br.com.atual.exemplo;
  */
 public interface IBean {
     Integer getId();
-    String getCpf();
 }
