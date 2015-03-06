@@ -24,6 +24,18 @@ public class Inicio {
         cliente.setNumeroCliente(123);
 
         daoCliente.salvar(cliente);
+        
+        DaoFuncionario daoFuncionario = new DaoFuncionario();
+        Funcionario funcionario = new Funcionario();
+        funcionario.setId(1);
+        funcionario.setNome("Funcionario exemplar");
+        funcionario.setNumeroFuncionario(123);
+
+        daoFuncionario.salvar(funcionario);
+        
+        
+        
+        
 
 
     }
